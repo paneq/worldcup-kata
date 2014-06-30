@@ -11,9 +11,7 @@ class FootballTime
   end
 
   def <=>(another)
-    ((extra_time && 1 || 0) <=> (another.extra_time && 1 || 0)).nonzero? ||
-    (half <=> another.half).nonzero? ||
-    (minute <=> another.minute)
+    # implement it :)
   end
 end
 

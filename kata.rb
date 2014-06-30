@@ -56,7 +56,7 @@ class FootbalTimeTest < MiniTest::Unit::TestCase
 
     Test.expect(
       FootballTime.new(minute: 2, half: 1, extra_time: false) > FootballTime.new(minute: 1, half: 1, extra_time: false),
-      "2nd minute of first half is greater than 2nd minute of 1st half"
+      "2nd minute of first half is greater than 1st minute of 1st half"
     )
 
     Test.expect(

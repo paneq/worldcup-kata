@@ -73,5 +73,10 @@ class FootbalTimeTest < MiniTest::Unit::TestCase
        FootballTime.new(minute: 92, half: 2, extra_time: false) < FootballTime.new(minute: 91, half: 1, extra_time: true),
       "92nd minute of match (second half) is lower than 91st first minute of first half of extra time"
     )
+
+    Test.expect(
+       FootballTime.new(minute: 107, half: 1, extra_time: true) < FootballTime.new(minute: 106, half: 2, extra_time: true),
+      "92nd minute of match (second half) is lower than 91st first minute of first half of extra time"
+    )
   end
 end
